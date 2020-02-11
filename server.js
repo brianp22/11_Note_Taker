@@ -13,3 +13,15 @@ app.use(express.json());
 app.get("/", function(req, res){
     res.sendFile(path.join(publicDir, "index.html"));
 });
+
+app.get("/notes", function(req, res) {
+    res.sendFile(path.join(publicDir, "notes.html"));
+});
+
+app.get("/api/notes", function(req, res) {
+    res.sendFile(path.join(__dirname, "/db/db.json"));
+});
+
+app.listen(port, function() {
+    console.log(`Listening on localhost:${port}`);
+});
