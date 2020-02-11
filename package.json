@@ -1,19 +1,15 @@
 {
-  "name": "11_note_taker",
+  "name": "note-taker",
   "version": "1.0.0",
-  "description": "## Description",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brianp22/11_Note_Taker.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brianp22/11_Note_Taker/issues"
-  },
-  "homepage": "https://github.com/brianp22/11_Note_Taker#readme"
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
 }
