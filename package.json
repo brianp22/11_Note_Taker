@@ -1,0 +1,19 @@
+{
+  "name": "11_note_taker",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianp22/11_Note_Taker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianp22/11_Note_Taker/issues"
+  },
+  "homepage": "https://github.com/brianp22/11_Note_Taker#readme"
+}
