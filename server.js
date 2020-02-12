@@ -15,7 +15,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-// GET routes
+// GET routes for HTML and db.JSON API
 
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(publicDir, "notes.html"));
