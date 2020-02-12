@@ -71,5 +71,5 @@ app.delete("/api/notes/:id", function(req, res) {
 // Initiate PORT 8080
 
 app.listen(PORT, function() {
-    console.log(`Listening on http://localhost:${PORT}`);
+    console.log(`CMD + CLICK to open Note Taker -> http://localhost:${PORT}`);
 })
