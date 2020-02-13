@@ -8,7 +8,7 @@ const fs = require("fs");
 // establishing PORT location, and creating path to HTML files
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 3000;
 const publicDir = path.join(__dirname, "/public");
 
 app.use(express.static('public'));
@@ -16,6 +16,10 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 // GET routes for HTML and db.JSON API
+
+app.get("/", function(req, res) {
+    res.json(path.join(__dirname, "public/index.html"));
+});
 
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(publicDir, "notes.html"));
@@ -68,7 +72,7 @@ app.delete("/api/notes/:id", function(req, res) {
     res.json(savedNotes);
 })
 
-// Initiate PORT 8080
+// Initiate PORT
 
 app.listen(PORT, function() {
     console.log(`CMD + CLICK to open Note Taker -> http://localhost:${PORT}`);
